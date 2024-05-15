@@ -15,29 +15,6 @@ import { draw_to_svg, diagram_combine, V2, plotf, xyaxes, Interactive} from 'dia
 
 export const graph = [
     {
-        id: 3,
-        type: 'mcq',
-        file: my3,
-        data: {
-            // txt: 'bla bla bla bla',
-            // file: 'path',
-            answers: [
-                {
-                    txt: 'The graph moves along the x axis',
-                    next: null
-                },
-                {
-                    txt: 'The graph moves along the y axis',
-                    next: 4
-                },
-                {
-                    txt: 'The graph turns upside down',
-                    next: null
-                }
-            ]
-        }
-    },
-    {
         id: 1,
         type: 'tts',
         file: my1,
