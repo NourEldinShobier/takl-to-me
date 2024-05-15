@@ -14,26 +14,26 @@ import { renderer } from './utils';
 import { draw_to_svg, diagram_combine, V2, plotf, xyaxes, Interactive} from 'diagramatics';
 
 export const graph = [
-    {
-        id: 1,
-        type: 'tts',
-        file: my1,
-        data: {
-            //txt: 'bla bla bla bla',
-            //file: 'path',
-            next: 2
-        }
-    },
-    {
-        id: 2,
-        type: 'tts',
-        file: my2,
-        data: {
-            //txt: 'bla bla bla bla',
-            //file: 'path',
-            next: 532523
-        }
-    },
+    // {
+    //     id: 1,
+    //     type: 'tts',
+    //     file: my1,
+    //     data: {
+    //         //txt: 'bla bla bla bla',
+    //         //file: 'path',
+    //         next: 2
+    //     }
+    // },
+    // {
+    //     id: 2,
+    //     type: 'tts',
+    //     file: my2,
+    //     data: {
+    //         //txt: 'bla bla bla bla',
+    //         //file: 'path',
+    //         next: 532523
+    //     }
+    // },
     {
         id: 532523,
         type: 'game',
@@ -52,7 +52,7 @@ export const graph = [
                 let int = new Interactive(controldiv, mysvg);
 
                 int.draw_function = function(inps) {
-                    let a = inps['a'];
+                    let a = inps['m'];
                     let b = inps['b'];
                     let opt = {
                         xrange: [0, 8], // Positive x-axis from 0 to 8
@@ -63,7 +63,7 @@ export const graph = [
                     let graph_f = plotf(f, opt).stroke('red').strokewidth(2);
                     draw(ax, graph_f);
                 };
-                int.slider('a', 0, 8, 1); 
+                int.slider('m', 0, 8, 1); 
                 int.slider('b', 0, 8, 0); 
                 int.draw();
 
