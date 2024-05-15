@@ -1,3 +1,22 @@
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 544px;
+  height: 48px;
+}
+
+#buttonContainer button {
+  border-radius: 4px;
+  color: black;
+  background: #FBCD00;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+}
+
+
 #siri-container {
     width: 600px;
     height: 300px;
@@ -5,4 +24,10 @@
     margin: 20px;
     margin: 0 auto;
     border: 1px dashed rgba(255, 255, 255, 0.4);
-  }
+}
+
+.container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}

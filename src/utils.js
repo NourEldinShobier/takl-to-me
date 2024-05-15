@@ -35,6 +35,7 @@ export function renderMCQ(node, graph){
         const answers = node.data.answers
       
         const buttonContainer = document.getElementById('buttonContainer');
+        buttonContainer.innerHTML = '';
   
         answers.forEach(answer => {
           const button = document.createElement('button');

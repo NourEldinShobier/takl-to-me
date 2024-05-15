@@ -1,6 +1,13 @@
-import my1234213 from './audio/1234213.mp3';
-import my75687568 from './audio/75687568.mp3';
-import my42342 from './audio/42342.mp3';
+import my1 from './audio/1.mp3';
+import my2 from './audio/2.mp3';
+import my3 from './audio/3.mp3';
+import my3_3 from './audio/3-3.mp3';
+import my4 from './audio/4.mp3';
+import my5 from './audio/5.mp3';
+import my6 from './audio/6.mp3';
+import my7 from './audio/7.mp3';
+import my8 from './audio/8.mp3';
+import my9 from './audio/9.mp3';
 
 import { renderer } from './utils';
 
@@ -8,19 +15,42 @@ import { draw_to_svg, diagram_combine, V2, plotf, xyaxes, Interactive} from 'dia
 
 export const graph = [
     {
-        id: 1234213,
-        type: 'tts',
-        file: my1234213,
+        id: 3,
+        type: 'mcq',
+        file: my3,
         data: {
-            //txt: 'bla bla bla bla',
-            //file: 'path',
-            next: 75687568
+            // txt: 'bla bla bla bla',
+            // file: 'path',
+            answers: [
+                {
+                    txt: 'The graph moves along the x axis',
+                    next: null
+                },
+                {
+                    txt: 'The graph moves along the y axis',
+                    next: 4
+                },
+                {
+                    txt: 'The graph turns upside down',
+                    next: null
+                }
+            ]
         }
     },
     {
-        id: 75687568,
+        id: 1,
         type: 'tts',
-        file: my75687568,
+        file: my1,
+        data: {
+            //txt: 'bla bla bla bla',
+            //file: 'path',
+            next: 2
+        }
+    },
+    {
+        id: 2,
+        type: 'tts',
+        file: my2,
         data: {
             //txt: 'bla bla bla bla',
             //file: 'path',
@@ -71,48 +101,124 @@ export const graph = [
                     const value = event.target.value;
 
                     if (!handledInteraction){
-                        renderer(mygraph[0], mygraph)
+                        setTimeout(() => {
+                            renderer(mygraph[0], mygraph)
+                        }, 400);
                         handledInteraction = true;
                     }
                 });
 
                 sliderB.addEventListener('input', (event) => {
                     const value = event.target.value;
+
+                    if (!handledInteraction){
+                        setTimeout(() => {
+                            renderer(mygraph[0], mygraph)
+                        }, 400);
+                        handledInteraction = true;
+                    }
                 });
             },
             graph: [
                 {
-                    id: 42342,
+                    id: 33,
                     type: 'tts',
-                    file: my42342,
+                    file: my3_3,
+                    data: {
+                        //txt: 'bla bla bla bla',
+                        //file: 'path',
+                        next: 3
+                    },
+                },
+                {
+                    id: 3,
+                    type: 'mcq',
+                    file: my3,
+                    data: {
+                        // txt: 'bla bla bla bla',
+                        // file: 'path',
+                        answers: [
+                            {
+                                txt: 'The graph moves along the x axis',
+                                next: null
+                            },
+                            {
+                                txt: 'The graph moves along the y axis',
+                                next: 4
+                            },
+                            {
+                                txt: 'The graph turns upside down',
+                                next: null
+                            }
+                        ]
+                    }
+                },
+                {
+                    id: 4,
+                    type: 'tts',
+                    file: my4,
+                    data: {
+                        //txt: 'bla bla bla bla',
+                        //file: 'path',
+                        next: 5
+                    },
+                },
+                {
+                    id: 5,
+                    type: 'mcq',
+                    file: my5,
+                    data: {
+                        // txt: 'bla bla bla bla',
+                        // file: 'path',
+                        answers: [
+                            {
+                                txt: 'Positive slope ',
+                                next: null
+                            },
+                            {
+                                txt: 'Negative slope ',
+                                next: 6
+                            },
+                            {
+                                txt: 'The graph remains parallel',
+                                next: null
+                            }
+                        ]
+                    }
+                },
+                {
+                    id: 6,
+                    type: 'mcq',
+                    file: my6,
+                    data: {
+                        // txt: 'bla bla bla bla',
+                        // file: 'path',
+                        answers: [
+                            {
+                                txt: 'Positive slope ',
+                                next: 7
+                            },
+                            {
+                                txt: 'Negative slope ',
+                                next: null
+                            },
+                            {
+                                txt: 'The graph remains parallel',
+                                next: null
+                            }
+                        ]
+                    }
+                },
+                {
+                    id: 7,
+                    type: 'tts',
+                    file: my7,
                     data: {
                         //txt: 'bla bla bla bla',
                         //file: 'path',
                         next: null
-                    }
+                    },
                 },
-            ]
-        }
-    },
-    {
-        id: 1234213,
-        type: 'mcq',
-        data: {
-            // txt: 'bla bla bla bla',
-            // file: 'path',
-            answers: [
-                {
-                    txt: 'A',
-                    next: 12313
-                },
-                {
-                    txt: 'B',
-                    next: 111
-                },
-                {
-                    txt: 'C',
-                    next: 111
-                }
             ]
         }
     },
