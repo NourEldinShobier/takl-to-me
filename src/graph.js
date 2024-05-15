@@ -14,26 +14,26 @@ import { renderer } from './utils';
 import { draw_to_svg, diagram_combine, V2, plotf, xyaxes, Interactive} from 'diagramatics';
 
 export const graph = [
-    // {
-    //     id: 1,
-    //     type: 'tts',
-    //     file: my1,
-    //     data: {
-    //         //txt: 'bla bla bla bla',
-    //         //file: 'path',
-    //         next: 2
-    //     }
-    // },
-    // {
-    //     id: 2,
-    //     type: 'tts',
-    //     file: my2,
-    //     data: {
-    //         //txt: 'bla bla bla bla',
-    //         //file: 'path',
-    //         next: 532523
-    //     }
-    // },
+    {
+        id: 1,
+        type: 'tts',
+        file: my1,
+        data: {
+            //txt: 'bla bla bla bla',
+            //file: 'path',
+            next: 2
+        }
+    },
+    {
+        id: 2,
+        type: 'tts',
+        file: my2,
+        data: {
+            //txt: 'bla bla bla bla',
+            //file: 'path',
+            next: 532523
+        }
+    },
     {
         id: 532523,
         type: 'game',
