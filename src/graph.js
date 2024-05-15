@@ -80,7 +80,7 @@ export const graph = [
                     if (!handledInteraction){
                         setTimeout(() => {
                             renderer(mygraph[0], mygraph)
-                        }, 400);
+                        }, 1000);
                         handledInteraction = true;
                     }
                 });

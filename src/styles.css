@@ -2,18 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  width: 544px;
-  height: 48px;
-}
-
-#buttonContainer button {
-  border-radius: 4px;
-  color: black;
-  background: #FBCD00;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 24px;
 }
 
 
