@@ -1,11 +1,25 @@
+import my1234213 from './audio/1234213.mp3';
+import my75687568 from './audio/75687568.mp3';
+
 export const graph = [
     {
         id: 1234213,
         type: 'tts',
+        file: my1234213,
         data: {
             //txt: 'bla bla bla bla',
             //file: 'path',
-            next: NULL
+            next: 75687568
+        }
+    },
+    {
+        id: 75687568,
+        type: 'tts',
+        file: my75687568,
+        data: {
+            //txt: 'bla bla bla bla',
+            //file: 'path',
+            next: null
         }
     },
     {
@@ -42,7 +56,7 @@ export const graph = [
                     data: {
                         txt: 'bla bla bla bla',
                         file: 'path',
-                        next: NULL
+                        next: null
                     }
                 },
             ]
