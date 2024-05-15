@@ -23,6 +23,19 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.(mp3|wav|ogg)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[path][name].[ext]',
+                      outputPath: 'audio/', // Output directory for audio files
+                      publicPath: 'audio/' // Public URL for audio files
+                    },
+                  },
+                ],
+              },
         ]
     },
     plugins: [

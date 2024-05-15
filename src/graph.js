@@ -3,8 +3,8 @@ export const graph = [
         id: 1234213,
         type: 'tts',
         data: {
-            txt: 'bla bla bla bla',
-            file: 'path',
+            //txt: 'bla bla bla bla',
+            //file: 'path',
             next: NULL
         }
     },
